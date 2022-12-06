@@ -1,5 +1,6 @@
 README.md
 setup.py
+Sensor/Config.py
 Sensor/__init__.py
 Sensor/exception.py
 Sensor/logger.py
