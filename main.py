@@ -1,25 +1,23 @@
-import pymongo
+from Sensor.logger import logging
+from Sensor.exception import SensorException
 
-# Provide the mongodb localhost url to connect python to mongodb.
-client = pymongo.MongoClient("mongodb://localhost:27017/neurolabDB")
+import sys,os
 
-# Database Name
-dataBase = client["neurolabDB"]
+def test_logger_and_exception():
+     try:
+          logging.info("Starting the test_logger_and_exception")
+          result=3/0
+          print(result)
+          logging.info("Stoping the test_logger_and_exception")
+     except Exception as e:
+          logging.debug(str(e))
+          raise SensorException(e, sys)
 
-# Collection  Name
-collection = dataBase['Products']
 
-# Sample data
-d = {'companyName': 'iNeuron',
-     'product': 'Affordable AI',
-     'courseOffered': 'Machine Learning with Deployment'}
+if __name__=="__main__":
 
-# Insert above records in the collection
-rec = collection.insert_one(d)
+     try:
+          test_logger_and_exception()
+     except Exception as e:
+          print(e)
 
-# Lets Verify all the record at once present in the record with all the fields
-all_record = collection.find()
-
-# Printing all records present in the collection
-for idx, record in enumerate(all_record):
-     print(f"{idx}: {record}")
