@@ -24,6 +24,7 @@ class DataIngestion:
         try:
             df:pd.DataFrame=utils.get_collection_as_dataframe(database_name=self.data_ingestion_config.database_name, 
             collection_name=self.data_ingestion_config.collection_name)
+            
             ### replace Na with nan
             df.replace(to_replace="na",value=np.NAN,inplace=True)
             ### Save data in feature store folder if not available
@@ -32,6 +33,7 @@ class DataIngestion:
             os.makedirs(feature_store_dir,exist_ok=True)
             logging.info("Save df to feature folder")
             df.to_csv(path_or_buf=self.data_ingestion_config.feature_store_file_path,index=False,header=True)
+            
 
             logging.info("split the dataset into train and test")
             train_df,test_df=train_test_split(df,test_size=self.data_ingestion_config.test_size)
