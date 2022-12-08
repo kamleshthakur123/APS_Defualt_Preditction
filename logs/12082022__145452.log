@@ -1,0 +1,16 @@
+[ 2022-12-08 14:54:53,478 ] 17 root - INFO - Reading data from database: {database_name} and collection {collection_name}
+[ 2022-12-08 14:54:56,791 ] 20 root - INFO - found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2022-12-08 14:54:56,791 ] 22 root - INFO - droping column :_id
+[ 2022-12-08 14:54:57,018 ] 24 root - INFO - row and cols in df :(36188, 171)
+[ 2022-12-08 14:54:57,560 ] 31 root - INFO - create a feature store folder if not available
+[ 2022-12-08 14:54:57,560 ] 34 root - INFO - Save df to feature folder
+[ 2022-12-08 14:54:59,934 ] 38 root - INFO - split the dataset into train and test
+[ 2022-12-08 14:55:00,446 ] 41 root - INFO - create dataset directory if not available
+[ 2022-12-08 14:55:00,446 ] 46 root - INFO - save df to feature store folder
+[ 2022-12-08 14:55:02,903 ] 17 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2022-12-08 14:55:02,903 ] 105 root - INFO - Reading base dataframe

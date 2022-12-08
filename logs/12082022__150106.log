@@ -1,0 +1,31 @@
+[ 2022-12-08 15:01:07,870 ] 17 root - INFO - Reading data from database: {database_name} and collection {collection_name}
+[ 2022-12-08 15:01:11,260 ] 20 root - INFO - found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2022-12-08 15:01:11,260 ] 22 root - INFO - droping column :_id
+[ 2022-12-08 15:01:11,473 ] 24 root - INFO - row and cols in df :(36188, 171)
+[ 2022-12-08 15:01:12,005 ] 31 root - INFO - create a feature store folder if not available
+[ 2022-12-08 15:01:12,005 ] 34 root - INFO - Save df to feature folder
+[ 2022-12-08 15:01:14,538 ] 38 root - INFO - split the dataset into train and test
+[ 2022-12-08 15:01:15,039 ] 41 root - INFO - create dataset directory if not available
+[ 2022-12-08 15:01:15,040 ] 46 root - INFO - save df to feature store folder
+[ 2022-12-08 15:01:17,637 ] 17 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2022-12-08 15:01:17,638 ] 105 root - INFO - Reading base dataframe
+[ 2022-12-08 15:01:20,494 ] 111 root - INFO - Replacing na value in base dataframe
+[ 2022-12-08 15:01:20,494 ] 112 root - INFO - drop null value columns having thresold greater than the defined
+[ 2022-12-08 15:01:21,407 ] 41 root - INFO - selecing columns name which contains null values above to 0.7
+[ 2022-12-08 15:01:21,408 ] 43 root - INFO - f columns to be drop:{drop_columns_names}
+[ 2022-12-08 15:01:21,489 ] 115 root - INFO - Reading train dataframe
+[ 2022-12-08 15:01:21,860 ] 117 root - INFO - Reading test dataframe
+[ 2022-12-08 15:01:21,957 ] 119 root - INFO - dropping missing value column form  train  dataframe
+[ 2022-12-08 15:01:21,969 ] 41 root - INFO - selecing columns name which contains null values above to 0.7
+[ 2022-12-08 15:01:21,969 ] 43 root - INFO - f columns to be drop:{drop_columns_names}
+[ 2022-12-08 15:01:21,979 ] 121 root - INFO - dropping missing value column from test dataframe
+[ 2022-12-08 15:01:21,983 ] 41 root - INFO - selecing columns name which contains null values above to 0.7
+[ 2022-12-08 15:01:21,984 ] 43 root - INFO - f columns to be drop:{drop_columns_names}
+[ 2022-12-08 15:01:21,986 ] 123 root - INFO - checking required column status in train dataframe
+[ 2022-12-08 15:01:21,987 ] 125 root - INFO - checking required column status in test dataframe
+[ 2022-12-08 15:01:21,987 ] 129 root - INFO - As columns are present in train dataframe hence detecting data drift

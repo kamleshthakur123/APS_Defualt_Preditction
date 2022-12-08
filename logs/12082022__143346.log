@@ -1,0 +1,18 @@
+[ 2022-12-08 14:33:47,174 ] 17 root - INFO - Reading data from database: {database_name} and collection {collection_name}
+[ 2022-12-08 14:33:50,589 ] 20 root - INFO - found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2022-12-08 14:33:50,589 ] 22 root - INFO - droping column :_id
+[ 2022-12-08 14:33:50,782 ] 24 root - INFO - row and cols in df :(36188, 171)
+[ 2022-12-08 14:33:51,319 ] 31 root - INFO - create a feature store folder if not available
+[ 2022-12-08 14:33:51,320 ] 34 root - INFO - Save df to feature folder
+[ 2022-12-08 14:33:53,728 ] 38 root - INFO - split the dataset into train and test
+[ 2022-12-08 14:33:54,248 ] 41 root - INFO - create dataset directory if not available
+[ 2022-12-08 14:33:54,249 ] 46 root - INFO - save df to feature store folder
+[ 2022-12-08 14:33:56,741 ] 17 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2022-12-08 14:33:56,741 ] 105 root - INFO - Reading base dataframe
+[ 2022-12-08 14:33:59,732 ] 110 root - INFO - Replacing na value in base dataframe
+[ 2022-12-08 14:33:59,732 ] 111 root - INFO - drop null value columns having thresold greater than the defined
