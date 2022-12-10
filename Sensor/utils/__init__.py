@@ -4,7 +4,7 @@ from Sensor.logger import logging
 from Sensor.exception import SensorException
 import os,sys
 import yaml
-from Sensor.Config import TARGET_COLUMN_MAPPING
+import numpy as np
 import dill
 
 def get_collection_as_dataframe(database_name:str,collection_name:str) ->pd.DataFrame:
