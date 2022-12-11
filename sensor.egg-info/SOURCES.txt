@@ -4,6 +4,7 @@ Sensor/Config.py
 Sensor/__init__.py
 Sensor/exception.py
 Sensor/logger.py
+Sensor/predictor.py
 Sensor/Components/DataIngestion.py
 Sensor/Components/DataTransformation.py
 Sensor/Components/DataValidation.py
@@ -13,6 +14,7 @@ Sensor/Components/ModelTrainer.py
 Sensor/Components/__init__.py
 Sensor/pipeline/Training_Pipeline.py
 Sensor/pipeline/__init__.py
+Sensor/pipeline/batch_prediction.py
 Sensor/utils/__init__.py
 sensor.egg-info/PKG-INFO
 sensor.egg-info/SOURCES.txt

@@ -1,9 +1,0 @@
-[ 2022-12-06 13:03:44,100 ] 9 root - INFO - Reading data from database: {database_name} and collection {collection_name}
-[ 2022-12-06 13:03:47,518 ] 12 root - INFO - found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
-       'af_000', 'ag_000', 'ag_001',
-       ...
-       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
-       'ee_009', 'ef_000', 'eg_000'],
-      dtype='object', length=172)
-[ 2022-12-06 13:03:47,518 ] 14 root - INFO - droping column :_id
-[ 2022-12-06 13:03:47,710 ] 16 root - INFO - row and cols in df :(36188, 171)
