@@ -4,7 +4,7 @@ import json
 
 ### provide the mongodb localhost url to connect mongodb with python
 
-client=pymongo.MongoClient("mongodb://localhost:27017")
+client=pymongo.MongoClient("mongodb+srv://root:kam1993@cluster0.o5a8fjl.mongodb.net/?retryWrites=true&w=majority")
 
 Data_File_Path="/config/workspace/aps_failure_training_set1.csv"
 Database_Name="aps"
