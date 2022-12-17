@@ -1,0 +1,12 @@
+artifact
+logs
+Notebook
+prediction
+saved_models
+*.egg-info
+.env
+Batch_prediction.py
+Dump_Data.py
+main.py
+README.md
+train.py
