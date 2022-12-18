@@ -17,4 +17,5 @@ pandas
 PyYAML
 scikit-learn
 PyYAML
+apache-airflow
 -e .
